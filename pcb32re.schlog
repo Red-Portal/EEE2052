@@ -1,0 +1,7 @@
+select figure at 2600 1981 8 -branches -sn=1
+select figure at 2909 2208 8 -branches -sn=1
+select figure at 3000 1564 8 -branches -sn=1
+select figure at 2988 1222 8 -branches -sn=1
+select figure at 2988 1222 8 -branches -all -sn=1
+set attr NA|T|Name value TC -sn=1
+select figure at 3145 1467 8 -branches -toggle -sn=1
