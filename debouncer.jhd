@@ -1,0 +1,3 @@
+MODULE debouncer
+	SUBMODULE pg32re
+		INSTANCE XLXI_12

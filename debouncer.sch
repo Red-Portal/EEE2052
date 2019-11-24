@@ -7,33 +7,15 @@
     </attr>
     <netlist>
         <signal name="C" />
-        <signal name="XLXN_64" />
-        <signal name="XLXN_69" />
-        <signal name="XLXN_71" />
-        <signal name="XLXN_72" />
-        <signal name="XLXN_75" />
-        <signal name="XLXN_79" />
-        <signal name="XLXN_88" />
-        <signal name="XLXN_92" />
-        <signal name="XLXN_94" />
-        <signal name="XLXN_95" />
-        <signal name="XLXN_98" />
         <signal name="I" />
         <signal name="XLXN_65" />
         <signal name="CLR" />
         <signal name="XLXN_49" />
         <signal name="CE" />
-        <signal name="XLXN_106" />
-        <signal name="XLXN_107" />
         <signal name="XLXN_76" />
         <signal name="XLXN_93" />
-        <signal name="XLXN_110" />
-        <signal name="XLXN_111" />
-        <signal name="XLXN_112" />
         <signal name="XLXN_99" />
         <signal name="XLXN_100(31:0)" />
-        <signal name="XLXN_116(31:0)" />
-        <signal name="XLXN_118" />
         <signal name="O" />
         <port polarity="Input" name="C" />
         <port polarity="Input" name="I" />
@@ -65,16 +47,6 @@
             <arc ex="128" ey="-144" sx="208" sy="-96" r="88" cx="132" cy="-56" />
             <arc ex="208" ey="-96" sx="128" sy="-48" r="88" cx="132" cy="-136" />
         </blockdef>
-        <blockdef name="pcb32re">
-            <timestamp>2019-11-21T11:50:2</timestamp>
-            <rect width="256" x="64" y="-256" height="256" />
-            <line x2="0" y1="-160" y2="-160" x1="64" />
-            <line x2="0" y1="-224" y2="-224" x1="64" />
-            <line x2="0" y1="-32" y2="-32" x1="64" />
-            <rect width="64" x="0" y="-44" height="24" />
-            <line x2="0" y1="-96" y2="-96" x1="64" />
-            <line x2="384" y1="-224" y2="-224" x1="320" />
-        </blockdef>
         <blockdef name="inv">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-32" y2="-32" x1="0" />
@@ -88,6 +60,15 @@
             <timestamp>2006-1-1T10:10:10</timestamp>
             <rect width="112" x="0" y="0" height="64" />
             <line x2="112" y1="32" y2="32" x1="144" />
+        </blockdef>
+        <blockdef name="pg32re">
+            <timestamp>2019-11-24T21:18:19</timestamp>
+            <rect width="256" x="64" y="-256" height="256" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <line x2="0" y1="-224" y2="-224" x1="64" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <line x2="384" y1="-224" y2="-224" x1="320" />
         </blockdef>
         <block symbolname="fdce" name="XLXI_2">
             <blockpin signalname="C" name="C" />
@@ -110,13 +91,6 @@
             <blockpin signalname="XLXN_65" name="D" />
             <blockpin signalname="O" name="Q" />
         </block>
-        <block symbolname="pcb32re" name="XLXI_7">
-            <blockpin signalname="C" name="C" />
-            <blockpin signalname="XLXN_93" name="CE" />
-            <blockpin signalname="XLXN_100(31:0)" name="MAX(31:0)" />
-            <blockpin signalname="XLXN_99" name="R" />
-            <blockpin signalname="XLXN_76" name="TC" />
-        </block>
         <block symbolname="inv" name="XLXI_9">
             <blockpin signalname="XLXN_76" name="I" />
             <blockpin signalname="XLXN_93" name="O" />
@@ -133,6 +107,13 @@
                 <trait valuetype="BitVector 32 Hexadecimal" />
             </attr>
             <blockpin signalname="XLXN_100(31:0)" name="O" />
+        </block>
+        <block symbolname="pg32re" name="XLXI_12">
+            <blockpin signalname="C" name="C" />
+            <blockpin signalname="XLXN_93" name="CE" />
+            <blockpin signalname="XLXN_100(31:0)" name="PERIOD" />
+            <blockpin signalname="XLXN_99" name="R" />
+            <blockpin signalname="XLXN_76" name="T" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -168,8 +149,6 @@
         <branch name="XLXN_93">
             <wire x2="2144" y1="1408" y2="1408" x1="2128" />
         </branch>
-        <instance x="2144" y="1632" name="XLXI_7" orien="R0">
-        </instance>
         <instance x="1904" y="1440" name="XLXI_9" orien="R0" />
         <instance x="1584" y="1632" name="XLXI_10" orien="R0" />
         <branch name="XLXN_99">
@@ -217,5 +196,7 @@
         </branch>
         <iomarker fontsize="28" x="3104" y="1168" name="O" orien="R0" />
         <iomarker fontsize="28" x="464" y="1008" name="CE" orien="R180" />
+        <instance x="2144" y="1632" name="XLXI_12" orien="R0">
+        </instance>
     </sheet>
 </drawing>
