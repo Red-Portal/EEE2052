@@ -1,0 +1,3 @@
+MODULE keypress_filter
+	SUBMODULE debouncer
+		INSTANCE XLXI_1

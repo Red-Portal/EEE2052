@@ -1,0 +1,13 @@
+MODULE input_process
+	SUBMODULE keypress_filter
+		INSTANCE XLXI_46
+	SUBMODULE keypress_filter
+		INSTANCE XLXI_47
+	SUBMODULE keypress_filter
+		INSTANCE XLXI_48
+	SUBMODULE keypress_filter
+		INSTANCE XLXI_7
+	SUBMODULE keypress_filter
+		INSTANCE XLXI_8
+	SUBMODULE keypress_filter
+		INSTANCE XLXI_9

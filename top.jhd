@@ -1,0 +1,3 @@
+MODULE top
+	SUBMODULE input_process
+		INSTANCE XLXI_1

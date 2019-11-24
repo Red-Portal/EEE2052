@@ -1,0 +1,5 @@
+MODULE direction_reg
+	SUBMODULE onehotsr8r
+		INSTANCE XLXI_80
+	SUBMODULE onehotsr8r
+		INSTANCE XLXI_81
