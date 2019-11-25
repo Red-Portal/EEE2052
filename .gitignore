@@ -61,9 +61,10 @@ fuse*
 *BatchFile
 xilinxsim.ini
 
-# System specific files
+# Project specific files
 *.html
 *.xmgsgs
+*.xise
 
 # iMPACT generated files
 _impactbatch.log
