@@ -14,9 +14,9 @@
         <signal name="XLXN_7" />
         <signal name="XLXN_14" />
         <signal name="XLXN_15" />
-        <signal name="Q(31:0)" />
         <signal name="Q(15:0)" />
         <signal name="Q(31:16)" />
+        <signal name="Q(31:0)" />
         <port polarity="Input" name="C" />
         <port polarity="Input" name="CLR" />
         <port polarity="Input" name="CE" />
@@ -104,33 +104,36 @@
         <branch name="XLXN_15">
             <wire x2="2544" y1="1200" y2="1200" x1="2512" />
         </branch>
-        <branch name="Q(31:0)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1824" y="960" type="branch" />
-            <wire x2="1744" y1="960" y2="1040" x1="1744" />
-            <wire x2="1824" y1="960" y2="960" x1="1744" />
-            <wire x2="2624" y1="960" y2="960" x1="1824" />
-            <wire x2="2624" y1="960" y2="1040" x1="2624" />
-            <wire x2="2784" y1="960" y2="960" x1="2624" />
-        </branch>
         <branch name="Q(15:0)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1680" y="1136" type="branch" />
             <wire x2="1680" y1="1136" y2="1136" x1="1632" />
             <wire x2="1744" y1="1136" y2="1136" x1="1680" />
-            <wire x2="1808" y1="1136" y2="1136" x1="1744" />
+            <wire x2="1792" y1="1136" y2="1136" x1="1744" />
+            <wire x2="1792" y1="912" y2="1056" x1="1792" />
+            <wire x2="1792" y1="1056" y2="1136" x1="1792" />
         </branch>
         <branch name="Q(31:16)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2560" y="1136" type="branch" />
             <wire x2="2560" y1="1136" y2="1136" x1="2512" />
             <wire x2="2624" y1="1136" y2="1136" x1="2560" />
-            <wire x2="2672" y1="1136" y2="1136" x1="2624" />
+            <wire x2="2656" y1="1136" y2="1136" x1="2624" />
+            <wire x2="2656" y1="912" y2="1056" x1="2656" />
+            <wire x2="2656" y1="1056" y2="1136" x1="2656" />
         </branch>
-        <bustap x2="1744" y1="1136" y2="1040" x1="1744" />
-        <bustap x2="2624" y1="1136" y2="1040" x1="2624" />
         <iomarker fontsize="28" x="992" y="1200" name="CE" orien="R180" />
         <iomarker fontsize="28" x="992" y="1488" name="C" orien="R180" />
         <iomarker fontsize="28" x="992" y="1440" name="CLR" orien="R180" />
-        <iomarker fontsize="28" x="2784" y="960" name="Q(31:0)" orien="R0" />
         <instance x="1248" y="1392" name="XLXI_5" orien="R0" />
         <instance x="2128" y="1392" name="XLXI_6" orien="R0" />
+        <branch name="Q(31:0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1824" y="816" type="branch" />
+            <wire x2="1824" y1="816" y2="816" x1="1792" />
+            <wire x2="2624" y1="816" y2="816" x1="1824" />
+            <wire x2="2656" y1="816" y2="816" x1="2624" />
+            <wire x2="2784" y1="816" y2="816" x1="2656" />
+        </branch>
+        <iomarker fontsize="28" x="2784" y="816" name="Q(31:0)" orien="R0" />
+        <bustap x2="1792" y1="816" y2="912" x1="1792" />
+        <bustap x2="2656" y1="816" y2="912" x1="2656" />
     </sheet>
 </drawing>

@@ -8,26 +8,22 @@
     <netlist>
         <signal name="CE" />
         <signal name="C" />
-        <signal name="XLXN_3" />
         <signal name="XLXN_2" />
         <signal name="cnt(31:0)" />
-        <signal name="XLXN_6(31:0)" />
         <signal name="cnt(31:16)" />
-        <signal name="MAX(31:0)" />
-        <signal name="XLXN_8" />
+        <signal name="cnt(15:0)" />
         <signal name="T" />
-        <signal name="PERIOD" />
-        <signal name="XLXN_11(31:0)" />
-        <signal name="max(31:16)" />
-        <signal name="max(15:0)" />
+        <signal name="PERIOD(31:0)" />
+        <signal name="PERIOD(31:16)" />
+        <signal name="PERIOD(15:0)" />
         <signal name="R" />
         <signal name="XLXN_6" />
-        <signal name="XLXN_16" />
         <signal name="XLXN_7" />
+        <signal name="XLXN_17" />
         <port polarity="Input" name="CE" />
         <port polarity="Input" name="C" />
         <port polarity="Output" name="T" />
-        <port polarity="Input" name="PERIOD" />
+        <port polarity="Input" name="PERIOD(31:0)" />
         <port polarity="Input" name="R" />
         <blockdef name="cb32re">
             <timestamp>2019-11-24T21:11:17</timestamp>
@@ -84,13 +80,13 @@
             <blockpin signalname="XLXN_2" name="O" />
         </block>
         <block symbolname="comp16" name="XLXI_9">
-            <blockpin signalname="MAX(31:0)" name="A(15:0)" />
-            <blockpin signalname="max(15:0)" name="B(15:0)" />
+            <blockpin signalname="cnt(15:0)" name="A(15:0)" />
+            <blockpin signalname="PERIOD(15:0)" name="B(15:0)" />
             <blockpin signalname="XLXN_7" name="EQ" />
         </block>
         <block symbolname="comp16" name="XLXI_8">
             <blockpin signalname="cnt(31:16)" name="A(15:0)" />
-            <blockpin signalname="max(31:16)" name="B(15:0)" />
+            <blockpin signalname="PERIOD(31:16)" name="B(15:0)" />
             <blockpin signalname="XLXN_6" name="EQ" />
         </block>
         <block symbolname="and2" name="XLXI_7">
@@ -119,8 +115,6 @@
             <wire x2="1552" y1="1104" y2="1104" x1="1472" />
             <wire x2="1632" y1="1104" y2="1104" x1="1552" />
             <wire x2="1632" y1="1104" y2="1296" x1="1632" />
-            <wire x2="1632" y1="1296" y2="1328" x1="1632" />
-            <wire x2="1632" y1="736" y2="768" x1="1632" />
             <wire x2="1632" y1="768" y2="1104" x1="1632" />
         </branch>
         <bustap x2="1728" y1="768" y2="768" x1="1632" />
@@ -130,7 +124,7 @@
             <wire x2="1744" y1="768" y2="768" x1="1728" />
             <wire x2="2064" y1="768" y2="768" x1="1744" />
         </branch>
-        <branch name="MAX(31:0)">
+        <branch name="cnt(15:0)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1744" y="1296" type="branch" />
             <wire x2="1744" y1="1296" y2="1296" x1="1728" />
             <wire x2="2064" y1="1296" y2="1296" x1="1744" />
@@ -143,20 +137,19 @@
             <wire x2="2784" y1="1120" y2="1632" x1="2784" />
             <wire x2="2896" y1="1120" y2="1120" x1="2784" />
         </branch>
-        <branch name="PERIOD">
+        <branch name="PERIOD(31:0)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="800" y="1712" type="branch" />
             <wire x2="800" y1="1712" y2="1712" x1="704" />
             <wire x2="1840" y1="1712" y2="1712" x1="800" />
-            <wire x2="1840" y1="912" y2="960" x1="1840" />
             <wire x2="1840" y1="960" y2="1488" x1="1840" />
             <wire x2="1840" y1="1488" y2="1712" x1="1840" />
         </branch>
-        <branch name="max(31:16)">
+        <branch name="PERIOD(31:16)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1952" y="960" type="branch" />
             <wire x2="1952" y1="960" y2="960" x1="1936" />
             <wire x2="2064" y1="960" y2="960" x1="1952" />
         </branch>
-        <branch name="max(15:0)">
+        <branch name="PERIOD(15:0)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1968" y="1488" type="branch" />
             <wire x2="1968" y1="1488" y2="1488" x1="1936" />
             <wire x2="2064" y1="1488" y2="1488" x1="1968" />
@@ -186,7 +179,7 @@
         <iomarker fontsize="28" x="688" y="1312" name="R" orien="R180" />
         <iomarker fontsize="28" x="688" y="1232" name="C" orien="R180" />
         <iomarker fontsize="28" x="688" y="1104" name="CE" orien="R180" />
-        <iomarker fontsize="28" x="704" y="1712" name="PERIOD" orien="R180" />
+        <iomarker fontsize="28" x="704" y="1712" name="PERIOD(31:0)" orien="R180" />
         <iomarker fontsize="28" x="2896" y="1120" name="T" orien="R0" />
     </sheet>
 </drawing>

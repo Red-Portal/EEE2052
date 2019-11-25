@@ -6,20 +6,18 @@
         <trait edittrait="all:0" />
     </attr>
     <netlist>
-        <signal name="XLXN_1" />
-        <signal name="XLXN_2" />
         <signal name="C" />
         <signal name="R" />
         <signal name="CE" />
         <signal name="XLXN_5" />
         <signal name="XLXN_6" />
-        <signal name="XLXN_8" />
         <signal name="XLXN_7" />
         <signal name="TC" />
         <signal name="CEO" />
-        <signal name="Q(31:0)" />
         <signal name="Q(15:0)" />
         <signal name="Q(31:16)" />
+        <signal name="Q(31:0)" />
+        <signal name="XLXN_11" />
         <port polarity="Input" name="C" />
         <port polarity="Input" name="R" />
         <port polarity="Input" name="CE" />
@@ -100,31 +98,24 @@
             <wire x2="2496" y1="1152" y2="1152" x1="2464" />
             <wire x2="2752" y1="1152" y2="1152" x1="2496" />
         </branch>
-        <branch name="Q(31:0)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1776" y="912" type="branch" />
-            <wire x2="1776" y1="912" y2="912" x1="1696" />
-            <wire x2="2576" y1="912" y2="912" x1="1776" />
-            <wire x2="2736" y1="912" y2="912" x1="2576" />
-            <wire x2="2576" y1="912" y2="992" x1="2576" />
-            <wire x2="1696" y1="912" y2="992" x1="1696" />
-        </branch>
         <branch name="Q(15:0)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1632" y="1088" type="branch" />
-            <wire x2="1632" y1="1088" y2="1088" x1="1584" />
-            <wire x2="1760" y1="1088" y2="1088" x1="1632" />
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1680" y="1088" type="branch" />
+            <wire x2="1680" y1="1088" y2="1088" x1="1584" />
+            <wire x2="1696" y1="1088" y2="1088" x1="1680" />
+            <wire x2="1760" y1="1088" y2="1088" x1="1696" />
+            <wire x2="1776" y1="1088" y2="1088" x1="1760" />
+            <wire x2="1776" y1="864" y2="1088" x1="1776" />
         </branch>
         <branch name="Q(31:16)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2512" y="1088" type="branch" />
-            <wire x2="2512" y1="1088" y2="1088" x1="2464" />
-            <wire x2="2576" y1="1088" y2="1088" x1="2512" />
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2544" y="1088" type="branch" />
+            <wire x2="2544" y1="1088" y2="1088" x1="2464" />
+            <wire x2="2576" y1="1088" y2="1088" x1="2544" />
             <wire x2="2624" y1="1088" y2="1088" x1="2576" />
+            <wire x2="2624" y1="864" y2="1088" x1="2624" />
         </branch>
-        <bustap x2="1696" y1="1088" y2="992" x1="1696" />
-        <bustap x2="2576" y1="1088" y2="992" x1="2576" />
         <iomarker fontsize="28" x="944" y="1152" name="CE" orien="R180" />
         <iomarker fontsize="28" x="944" y="1440" name="C" orien="R180" />
         <iomarker fontsize="28" x="944" y="1392" name="R" orien="R180" />
-        <iomarker fontsize="28" x="2736" y="912" name="Q(31:0)" orien="R0" />
         <branch name="C">
             <wire x2="1136" y1="1440" y2="1440" x1="944" />
             <wire x2="2016" y1="1440" y2="1440" x1="1136" />
@@ -140,5 +131,14 @@
         <instance x="2080" y="1344" name="XLXI_5" orien="R0" />
         <iomarker fontsize="28" x="2752" y="1152" name="CEO" orien="R0" />
         <iomarker fontsize="28" x="2752" y="1216" name="TC" orien="R0" />
+        <branch name="Q(31:0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2208" y="768" type="branch" />
+            <wire x2="2208" y1="768" y2="768" x1="1776" />
+            <wire x2="2624" y1="768" y2="768" x1="2208" />
+            <wire x2="2784" y1="768" y2="768" x1="2624" />
+        </branch>
+        <iomarker fontsize="28" x="2784" y="768" name="Q(31:0)" orien="R0" />
+        <bustap x2="1776" y1="768" y2="864" x1="1776" />
+        <bustap x2="2624" y1="768" y2="864" x1="2624" />
     </sheet>
 </drawing>
