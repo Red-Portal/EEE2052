@@ -1,3 +1,5 @@
 MODULE top
 	SUBMODULE input_process
 		INSTANCE XLXI_1
+	SUBMODULE cursor_reg
+		INSTANCE XLXI_3

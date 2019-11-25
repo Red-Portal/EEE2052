@@ -8,12 +8,10 @@
     <netlist>
         <signal name="XLXN_1(7:0)" />
         <signal name="O(7:0)" />
-        <signal name="XLXN_3(7:0)" />
         <signal name="O(7)" />
         <signal name="O(0)" />
         <signal name="XLXN_6" />
         <signal name="XLXN_7" />
-        <signal name="XLXN_8" />
         <signal name="XLXN_54" />
         <signal name="LEFT_EN" />
         <signal name="RIGHT_EN" />
@@ -30,7 +28,6 @@
         <signal name="LEFT" />
         <signal name="XLXN_23" />
         <signal name="XLXN_14" />
-        <signal name="XLXN_25" />
         <signal name="R" />
         <port polarity="Output" name="O(7:0)" />
         <port polarity="Input" name="C" />
@@ -287,5 +284,6 @@
         <iomarker fontsize="28" x="624" y="768" name="EN" orien="R180" />
         <iomarker fontsize="28" x="2704" y="1088" name="O(7:0)" orien="R0" />
         <text style="fontsize:64;fontname:Arial" x="996" y="320">8-Bit Onehot Shift Register with Synchronous Reset</text>
+        <text style="fontsize:32;fontname:Arial" x="216" y="584">LEFT and RIGHT inputs are assumed to be mutually exclusive</text>
     </sheet>
 </drawing>
