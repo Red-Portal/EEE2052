@@ -45,13 +45,25 @@
 *_summary.xml
 *_usage.xml
 *_xst.xrpt
+*.vhf
 
 # ISE log files
 *.schlog
 *.symlog
+*.log
+
+# Simulation generated files
+isim/
+isim.*
+fuse*
+*.exe
+*.wdb
+*BatchFile
+xilinxsim.ini
 
 # System specific files
 *.html
+*.xmgsgs
 
 # iMPACT generated files
 _impactbatch.log
