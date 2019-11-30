@@ -98,9 +98,9 @@
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
         <branch name="ColData(7:0)">
-            <wire x2="1888" y1="192" y2="192" x1="336" />
-            <wire x2="1888" y1="192" y2="832" x1="1888" />
-            <wire x2="1904" y1="832" y2="832" x1="1888" />
+            <wire x2="1856" y1="192" y2="192" x1="336" />
+            <wire x2="1856" y1="192" y2="832" x1="1856" />
+            <wire x2="1904" y1="832" y2="832" x1="1856" />
         </branch>
         <branch name="ColCoord(7:0)">
             <wire x2="1312" y1="512" y2="512" x1="352" />
@@ -108,9 +108,9 @@
             <wire x2="1376" y1="832" y2="832" x1="1312" />
         </branch>
         <branch name="CursorEnable">
-            <wire x2="912" y1="976" y2="976" x1="832" />
-            <wire x2="928" y1="800" y2="800" x1="912" />
-            <wire x2="912" y1="800" y2="976" x1="912" />
+            <wire x2="944" y1="976" y2="976" x1="832" />
+            <wire x2="944" y1="800" y2="976" x1="944" />
+            <wire x2="1008" y1="800" y2="800" x1="944" />
         </branch>
         <branch name="XLXN_34(7:0)">
             <wire x2="1904" y1="768" y2="768" x1="1760" />
@@ -148,28 +148,26 @@
         <instance x="1376" y="864" name="XLXI_4" orien="R0">
         </instance>
         <branch name="XLXN_10">
-            <wire x2="1376" y1="768" y2="768" x1="1184" />
+            <wire x2="1376" y1="768" y2="768" x1="1264" />
         </branch>
         <iomarker fontsize="28" x="368" y="640" name="RowCoord(7:0)" orien="R180" />
         <branch name="RowCoord(7:0)">
-            <wire x2="432" y1="640" y2="640" x1="368" />
-            <wire x2="512" y1="640" y2="640" x1="432" />
+            <wire x2="544" y1="640" y2="640" x1="368" />
         </branch>
-        <instance x="928" y="864" name="XLXI_14" orien="R0" />
-        <instance x="512" y="960" name="XLXI_13" orien="R0" />
         <branch name="XLXN_40">
-            <wire x2="928" y1="736" y2="736" x1="896" />
+            <wire x2="1008" y1="736" y2="736" x1="928" />
         </branch>
         <iomarker fontsize="28" x="832" y="976" name="CursorEnable" orien="R180" />
         <branch name="RowAddress(7:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="416" y="832" type="branch" />
-            <wire x2="432" y1="832" y2="832" x1="416" />
-            <wire x2="512" y1="832" y2="832" x1="432" />
+            <wire x2="544" y1="832" y2="832" x1="416" />
         </branch>
         <iomarker fontsize="28" x="336" y="192" name="ColData(7:0)" orien="R180" />
         <branch name="RowAddress(7:0)">
             <wire x2="624" y1="288" y2="288" x1="400" />
         </branch>
         <iomarker fontsize="28" x="400" y="288" name="RowAddress(7:0)" orien="R180" />
+        <instance x="544" y="960" name="XLXI_13" orien="R0" />
+        <instance x="1008" y="864" name="XLXI_14" orien="R0" />
     </sheet>
 </drawing>

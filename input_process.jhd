@@ -10,4 +10,6 @@ MODULE input_process
 	SUBMODULE keypress_filter
 		INSTANCE XLXI_8
 	SUBMODULE keypress_filter
+		INSTANCE XLXI_80
+	SUBMODULE keypress_filter
 		INSTANCE XLXI_9
