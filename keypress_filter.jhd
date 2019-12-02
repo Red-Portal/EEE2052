@@ -1,3 +1,5 @@
 MODULE keypress_filter
+	SUBMODULE falling_edge_detector
+		INSTANCE XLXI_8
 	SUBMODULE debouncer
-		INSTANCE XLXI_1
+		INSTANCE XLXI_10

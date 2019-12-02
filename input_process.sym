@@ -1,60 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="input_process">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2019-11-30T5:41:21</timestamp>
-    <pin polarity="Input" x="0" y="-544" name="C" />
-    <pin polarity="Input" x="0" y="-608" name="CE" />
-    <pin polarity="Input" x="0" y="-480" name="CLR" />
-    <pin polarity="Input" x="0" y="-224" name="I_DOWN" />
-    <pin polarity="Input" x="0" y="-32" name="I_ENTER" />
-    <pin polarity="Input" x="0" y="-160" name="I_LEFT" />
-    <pin polarity="Input" x="0" y="-96" name="I_RIGHT" />
-    <pin polarity="Input" x="0" y="-416" name="I_SET" />
-    <pin polarity="Input" x="0" y="-352" name="I_UNSET" />
-    <pin polarity="Input" x="0" y="-288" name="I_UP" />
-    <pin polarity="Output" x="384" y="-416" name="O_DOWN" />
+    <timestamp>2019-11-30T5:53:26</timestamp>
+    <pin polarity="Input" x="0" y="-32" name="C" />
+    <pin polarity="Input" x="0" y="-96" name="CE" />
+    <pin polarity="Input" x="0" y="-160" name="CLR" />
+    <pin polarity="Input" x="0" y="-544" name="I_DOWN" />
+    <pin polarity="Input" x="0" y="-224" name="I_ENTER" />
+    <pin polarity="Input" x="0" y="-480" name="I_LEFT" />
+    <pin polarity="Input" x="0" y="-416" name="I_RIGHT" />
+    <pin polarity="Input" x="0" y="-352" name="I_SET" />
+    <pin polarity="Input" x="0" y="-288" name="I_UNSET" />
+    <pin polarity="Input" x="0" y="-608" name="I_UP" />
+    <pin polarity="Output" x="384" y="-544" name="O_DOWN" />
     <pin polarity="Output" x="384" y="-224" name="O_ENTER" />
-    <pin polarity="Output" x="384" y="-352" name="O_LEFT" />
-    <pin polarity="Output" x="384" y="-288" name="O_RIGHT" />
-    <pin polarity="Output" x="384" y="-608" name="O_SET" />
-    <pin polarity="Output" x="384" y="-544" name="O_UNSET" />
-    <pin polarity="Output" x="384" y="-480" name="O_UP" />
+    <pin polarity="Output" x="384" y="-480" name="O_LEFT" />
+    <pin polarity="Output" x="384" y="-416" name="O_RIGHT" />
+    <pin polarity="Output" x="384" y="-352" name="O_SET" />
+    <pin polarity="Output" x="384" y="-288" name="O_UNSET" />
+    <pin polarity="Output" x="384" y="-608" name="O_UP" />
     <graph>
         <rect width="256" x="64" y="-640" height="640" />
         <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="192" y="-648" type="symbol" />
-        <line x2="0" y1="-544" y2="-544" x1="64" />
-        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-544" type="pin C" />
-        <line x2="0" y1="-608" y2="-608" x1="64" />
-        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-608" type="pin CE" />
-        <line x2="0" y1="-480" y2="-480" x1="64" />
-        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-480" type="pin CLR" />
-        <line x2="0" y1="-224" y2="-224" x1="64" />
-        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-224" type="pin I_DOWN" />
         <line x2="0" y1="-32" y2="-32" x1="64" />
-        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin I_ENTER" />
-        <line x2="0" y1="-160" y2="-160" x1="64" />
-        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-160" type="pin I_LEFT" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin C" />
         <line x2="0" y1="-96" y2="-96" x1="64" />
-        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-96" type="pin I_RIGHT" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-96" type="pin CE" />
+        <line x2="0" y1="-160" y2="-160" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-160" type="pin CLR" />
+        <line x2="0" y1="-544" y2="-544" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-544" type="pin I_DOWN" />
+        <line x2="0" y1="-224" y2="-224" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-224" type="pin I_ENTER" />
+        <line x2="0" y1="-480" y2="-480" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-480" type="pin I_LEFT" />
         <line x2="0" y1="-416" y2="-416" x1="64" />
-        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-416" type="pin I_SET" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-416" type="pin I_RIGHT" />
         <line x2="0" y1="-352" y2="-352" x1="64" />
-        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-352" type="pin I_UNSET" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-352" type="pin I_SET" />
         <line x2="0" y1="-288" y2="-288" x1="64" />
-        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-288" type="pin I_UP" />
-        <line x2="384" y1="-416" y2="-416" x1="320" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-416" type="pin O_DOWN" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-288" type="pin I_UNSET" />
+        <line x2="0" y1="-608" y2="-608" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-608" type="pin I_UP" />
+        <line x2="384" y1="-544" y2="-544" x1="320" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-544" type="pin O_DOWN" />
         <line x2="384" y1="-224" y2="-224" x1="320" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-224" type="pin O_ENTER" />
-        <line x2="384" y1="-352" y2="-352" x1="320" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-352" type="pin O_LEFT" />
-        <line x2="384" y1="-288" y2="-288" x1="320" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-288" type="pin O_RIGHT" />
-        <line x2="384" y1="-608" y2="-608" x1="320" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-608" type="pin O_SET" />
-        <line x2="384" y1="-544" y2="-544" x1="320" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-544" type="pin O_UNSET" />
         <line x2="384" y1="-480" y2="-480" x1="320" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-480" type="pin O_UP" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-480" type="pin O_LEFT" />
+        <line x2="384" y1="-416" y2="-416" x1="320" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-416" type="pin O_RIGHT" />
+        <line x2="384" y1="-352" y2="-352" x1="320" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-352" type="pin O_SET" />
+        <line x2="384" y1="-288" y2="-288" x1="320" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-288" type="pin O_UNSET" />
+        <line x2="384" y1="-608" y2="-608" x1="320" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-608" type="pin O_UP" />
     </graph>
 </symbol>

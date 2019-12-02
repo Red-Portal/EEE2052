@@ -14,13 +14,8 @@
         <signal name="CE" />
         <signal name="XLXN_76" />
         <signal name="O" />
-        <signal name="XLXN_108" />
         <signal name="XLXN_99" />
-        <signal name="XLXN_110" />
-        <signal name="XLXN_112" />
-        <signal name="XLXN_114" />
         <signal name="XLXN_115" />
-        <signal name="XLXN_116" />
         <signal name="XLXN_119(31:0)" />
         <port polarity="Input" name="C" />
         <port polarity="Input" name="I" />
