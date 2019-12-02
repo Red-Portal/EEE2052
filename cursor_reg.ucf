@@ -1,0 +1,20 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "col[0]" LOC = P12;
+NET "col[1]" LOC = K1;
+NET "col[2]" LOC = K2;
+NET "col[3]" LOC = N5;
+NET "col[4]" LOC = L2;
+NET "col[5]" LOC = N6;
+NET "col[6]" LOC = L14;
+NET "col[7]" LOC = L13;
+NET "row[0]" LOC = P5;
+NET "row[1]" LOC = N12;
+NET "row[2]" LOC = M2;
+NET "row[3]" LOC = P7;
+NET "row[4]" LOC = J1;
+NET "row[5]" LOC = M1;
+NET "row[6]" LOC = J2;
+NET "row[7]" LOC = L1;
+NET "C" LOC = N8;

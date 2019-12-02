@@ -1,1 +1,3 @@
 MODULE top
+	SUBMODULE OutputUnit
+		INSTANCE XLXI_12
