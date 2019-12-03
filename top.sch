@@ -6,7 +6,7 @@
         <trait edittrait="all:0" />
     </attr>
     <netlist>
-        <signal name="XLXN_61" />
+        <signal name="TEMP(4)" />
         <signal name="C" />
         <signal name="KEY_COL(3:0)" />
         <signal name="KEY_ROW(3:0)" />
@@ -17,14 +17,14 @@
         <signal name="XLXN_84" />
         <signal name="XLXN_85" />
         <signal name="XLXN_87" />
-        <signal name="XLXN_90" />
-        <signal name="XLXN_91" />
-        <signal name="XLXN_92" />
-        <signal name="XLXN_93" />
+        <signal name="TEMP(0)" />
+        <signal name="TEMP(1)" />
+        <signal name="TEMP(2)" />
+        <signal name="TEMP(3)" />
         <signal name="XLXN_48" />
         <signal name="LED_COL(7:0)" />
         <signal name="LED_ROW(7:0)" />
-        <signal name="XLXN_105(7:0)" />
+        <signal name="TEMP(7:0)" />
         <signal name="XLXN_106(7:0)" />
         <signal name="XLXN_107" />
         <signal name="XLXN_108" />
@@ -42,7 +42,7 @@
         <signal name="ROW(6)" />
         <signal name="ROW(7)" />
         <signal name="XLXN_123" />
-        <signal name="XLXN_124" />
+        <signal name="TEMP(5)" />
         <port polarity="Input" name="C" />
         <port polarity="Input" name="KEY_COL(3:0)" />
         <port polarity="Output" name="KEY_ROW(3:0)" />
@@ -124,21 +124,6 @@
             <line x2="384" y1="-288" y2="-288" x1="320" />
             <line x2="384" y1="-608" y2="-608" x1="320" />
         </blockdef>
-        <blockdef name="cursor_reg">
-            <timestamp>2019-11-25T11:28:35</timestamp>
-            <rect width="256" x="64" y="-448" height="448" />
-            <line x2="0" y1="-32" y2="-32" x1="64" />
-            <line x2="384" y1="-352" y2="-352" x1="320" />
-            <rect width="64" x="320" y="-364" height="24" />
-            <line x2="0" y1="-352" y2="-352" x1="64" />
-            <line x2="0" y1="-160" y2="-160" x1="64" />
-            <line x2="0" y1="-288" y2="-288" x1="64" />
-            <line x2="0" y1="-96" y2="-96" x1="64" />
-            <line x2="0" y1="-224" y2="-224" x1="64" />
-            <line x2="384" y1="-416" y2="-416" x1="320" />
-            <rect width="64" x="320" y="-428" height="24" />
-            <line x2="0" y1="-416" y2="-416" x1="64" />
-        </blockdef>
         <blockdef name="d3_8e">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-576" y2="-576" x1="0" />
@@ -174,7 +159,7 @@
         </blockdef>
         <block symbolname="input_detect" name="XLXI_23">
             <blockpin signalname="C" name="C" />
-            <blockpin signalname="XLXN_61" name="CE" />
+            <blockpin signalname="TEMP(4)" name="CE" />
             <blockpin signalname="XLXN_81" name="DOWN" />
             <blockpin signalname="XLXN_87" name="ENTER" />
             <blockpin signalname="KEY_COL(3:0)" name="KEY_COL(3:0)" />
@@ -186,11 +171,11 @@
             <blockpin signalname="XLXN_80" name="UP" />
         </block>
         <block symbolname="vcc" name="XLXI_24">
-            <blockpin signalname="XLXN_61" name="P" />
+            <blockpin signalname="TEMP(4)" name="P" />
         </block>
         <block symbolname="input_process" name="XLXI_34">
             <blockpin signalname="C" name="C" />
-            <blockpin signalname="XLXN_61" name="CE" />
+            <blockpin signalname="TEMP(4)" name="CE" />
             <blockpin signalname="XLXN_123" name="CLR" />
             <blockpin signalname="XLXN_81" name="I_DOWN" />
             <blockpin signalname="XLXN_87" name="I_ENTER" />
@@ -199,37 +184,26 @@
             <blockpin signalname="XLXN_84" name="I_SET" />
             <blockpin signalname="XLXN_85" name="I_UNSET" />
             <blockpin signalname="XLXN_80" name="I_UP" />
-            <blockpin signalname="XLXN_91" name="O_DOWN" />
+            <blockpin signalname="TEMP(1)" name="O_DOWN" />
             <blockpin name="O_ENTER" />
-            <blockpin signalname="XLXN_92" name="O_LEFT" />
-            <blockpin signalname="XLXN_93" name="O_RIGHT" />
-            <blockpin signalname="XLXN_124" name="O_SET" />
+            <blockpin signalname="TEMP(2)" name="O_LEFT" />
+            <blockpin signalname="TEMP(3)" name="O_RIGHT" />
+            <blockpin signalname="TEMP(5)" name="O_SET" />
             <blockpin name="O_UNSET" />
-            <blockpin signalname="XLXN_90" name="O_UP" />
+            <blockpin signalname="TEMP(0)" name="O_UP" />
         </block>
         <block symbolname="gnd" name="XLXI_35">
             <blockpin signalname="XLXN_123" name="G" />
         </block>
-        <block symbolname="cursor_reg" name="XLXI_36">
-            <blockpin signalname="C" name="C" />
-            <blockpin signalname="XLXN_106(7:0)" name="col(7:0)" />
-            <blockpin signalname="XLXN_91" name="DOWN" />
-            <blockpin signalname="XLXN_61" name="EN" />
-            <blockpin signalname="XLXN_92" name="LEFT" />
-            <blockpin signalname="XLXN_124" name="R" />
-            <blockpin signalname="XLXN_93" name="RIGHT" />
-            <blockpin signalname="XLXN_105(7:0)" name="row(7:0)" />
-            <blockpin signalname="XLXN_90" name="UP" />
-        </block>
         <block symbolname="OutputUnit" name="XLXI_12">
-            <blockpin signalname="XLXN_106(7:0)" name="ColCoord(7:0)" />
+            <blockpin signalname="TEMP(7:0)" name="ColCoord(7:0)" />
             <blockpin signalname="XLXN_114(7:0)" name="ColData(7:0)" />
             <blockpin signalname="XLXN_48" name="CursorEnable" />
             <blockpin signalname="LED_COL(7:0)" name="DOT_COL(7:0)" />
             <blockpin signalname="LED_ROW(7:0)" name="DOT_ROW(7:0)" />
             <blockpin signalname="XLXN_48" name="OE" />
             <blockpin signalname="ROW(7:0)" name="RowAddress(7:0)" />
-            <blockpin signalname="XLXN_105(7:0)" name="RowCoord(7:0)" />
+            <blockpin signalname="TEMP(7:0)" name="RowCoord(7:0)" />
         </block>
         <block symbolname="vcc" name="XLXI_18">
             <blockpin signalname="XLXN_48" name="P" />
@@ -263,7 +237,7 @@
             <blockpin signalname="XLXN_112" name="P" />
         </block>
         <block symbolname="constant" name="XLXI_16">
-            <attr value="00000001" name="CValue">
+            <attr value="00000000" name="CValue">
                 <trait delete="all:1 sym:0" />
                 <trait editname="all:1 sch:0" />
                 <trait valuetype="BitVector 32 Hexadecimal" />
@@ -281,7 +255,8 @@
         <branch name="C">
             <wire x2="512" y1="768" y2="768" x1="432" />
         </branch>
-        <branch name="XLXN_61">
+        <branch name="TEMP(4)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2080" y="960" type="branch" />
             <wire x2="448" y1="480" y2="480" x1="96" />
             <wire x2="448" y1="480" y2="704" x1="448" />
             <wire x2="512" y1="704" y2="704" x1="448" />
@@ -326,26 +301,24 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1408" y="1280" type="branch" />
             <wire x2="1472" y1="1280" y2="1280" x1="1408" />
             <wire x2="1488" y1="1280" y2="1280" x1="1472" />
-            <wire x2="1472" y1="1280" y2="1360" x1="1472" />
-            <wire x2="2064" y1="1360" y2="1360" x1="1472" />
-            <wire x2="2080" y1="1088" y2="1088" x1="2064" />
-            <wire x2="2064" y1="1088" y2="1360" x1="2064" />
         </branch>
         <instance x="384" y="448" name="XLXI_24" orien="R0" />
-        <branch name="XLXN_90">
+        <branch name="TEMP(0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2080" y="704" type="branch" />
             <wire x2="2080" y1="704" y2="704" x1="1872" />
         </branch>
-        <branch name="XLXN_91">
+        <branch name="TEMP(1)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2080" y="768" type="branch" />
             <wire x2="2080" y1="768" y2="768" x1="1872" />
         </branch>
-        <branch name="XLXN_92">
+        <branch name="TEMP(2)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2080" y="832" type="branch" />
             <wire x2="2080" y1="832" y2="832" x1="1872" />
         </branch>
-        <branch name="XLXN_93">
+        <branch name="TEMP(3)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2080" y="896" type="branch" />
             <wire x2="2080" y1="896" y2="896" x1="1872" />
         </branch>
-        <instance x="2080" y="1120" name="XLXI_36" orien="R0">
-        </instance>
         <instance x="2368" y="2272" name="XLXI_12" orien="R0">
         </instance>
         <branch name="XLXN_48">
@@ -363,17 +336,18 @@
         <instance x="2176" y="1664" name="XLXI_18" orien="R0" />
         <iomarker fontsize="28" x="3040" y="1920" name="LED_COL(7:0)" orien="R0" />
         <iomarker fontsize="28" x="3040" y="1984" name="LED_ROW(7:0)" orien="R0" />
-        <branch name="XLXN_105(7:0)">
+        <branch name="TEMP(7:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2384" y="704" type="branch" />
             <wire x2="2368" y1="2112" y2="2112" x1="2304" />
             <wire x2="2304" y1="2112" y2="2336" x1="2304" />
             <wire x2="3024" y1="2336" y2="2336" x1="2304" />
-            <wire x2="3024" y1="704" y2="704" x1="2464" />
-            <wire x2="3024" y1="704" y2="2336" x1="3024" />
-        </branch>
-        <branch name="XLXN_106(7:0)">
             <wire x2="2480" y1="1824" y2="1824" x1="2320" />
             <wire x2="2320" y1="1824" y2="2048" x1="2320" />
             <wire x2="2368" y1="2048" y2="2048" x1="2320" />
+            <wire x2="2464" y1="704" y2="704" x1="2384" />
+            <wire x2="3024" y1="704" y2="704" x1="2464" />
+            <wire x2="3024" y1="704" y2="2336" x1="3024" />
+            <wire x2="2464" y1="704" y2="768" x1="2464" />
             <wire x2="2480" y1="768" y2="768" x1="2464" />
             <wire x2="2480" y1="768" y2="1824" x1="2480" />
         </branch>
@@ -453,7 +427,8 @@
             <wire x2="400" y1="1152" y2="1328" x1="400" />
             <wire x2="1488" y1="1152" y2="1152" x1="400" />
         </branch>
-        <branch name="XLXN_124">
+        <branch name="TEMP(5)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2080" y="1024" type="branch" />
             <wire x2="1936" y1="960" y2="960" x1="1872" />
             <wire x2="1936" y1="960" y2="1024" x1="1936" />
             <wire x2="2080" y1="1024" y2="1024" x1="1936" />
