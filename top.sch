@@ -270,7 +270,7 @@
             <blockpin signalname="XLXN_112" name="P" />
         </block>
         <block symbolname="constant" name="XLXI_16">
-            <attr value="00000000" name="CValue">
+            <attr value="00000001" name="CValue">
                 <trait delete="all:1 sym:0" />
                 <trait editname="all:1 sch:0" />
                 <trait valuetype="BitVector 32 Hexadecimal" />
@@ -353,7 +353,6 @@
         </branch>
         <instance x="2080" y="1120" name="XLXI_36" orien="R0">
         </instance>
-        <instance x="1200" y="1568" name="XLXI_35" orien="R0" />
         <instance x="2368" y="2272" name="XLXI_12" orien="R0">
         </instance>
         <branch name="XLXN_48">
@@ -455,13 +454,14 @@
             <wire x2="1600" y1="2256" y2="2256" x1="1504" />
         </branch>
         <branch name="XLXN_123">
-            <wire x2="1488" y1="1152" y2="1152" x1="1264" />
-            <wire x2="1264" y1="1152" y2="1440" x1="1264" />
+            <wire x2="400" y1="1152" y2="1328" x1="400" />
+            <wire x2="1488" y1="1152" y2="1152" x1="400" />
         </branch>
         <branch name="XLXN_124">
             <wire x2="1936" y1="960" y2="960" x1="1872" />
             <wire x2="1936" y1="960" y2="1024" x1="1936" />
             <wire x2="2080" y1="1024" y2="1024" x1="1936" />
         </branch>
+        <instance x="336" y="1456" name="XLXI_35" orien="R0" />
     </sheet>
 </drawing>
