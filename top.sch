@@ -231,15 +231,12 @@
         <block symbolname="OutputUnit" name="XLXI_12">
             <blockpin signalname="XLXN_106(7:0)" name="ColCoord(7:0)" />
             <blockpin signalname="XLXN_114(7:0)" name="ColData(7:0)" />
-            <blockpin signalname="XLXN_47" name="CursorEnable" />
+            <blockpin signalname="XLXN_48" name="CursorEnable" />
             <blockpin signalname="LED_COL(7:0)" name="DOT_COL(7:0)" />
             <blockpin signalname="LED_ROW(7:0)" name="DOT_ROW(7:0)" />
             <blockpin signalname="XLXN_48" name="OE" />
             <blockpin signalname="ROW(7:0)" name="RowAddress(7:0)" />
             <blockpin signalname="XLXN_105(7:0)" name="RowCoord(7:0)" />
-        </block>
-        <block symbolname="gnd" name="XLXI_17">
-            <blockpin signalname="XLXN_47" name="G" />
         </block>
         <block symbolname="vcc" name="XLXI_18">
             <blockpin signalname="XLXN_48" name="P" />
@@ -359,14 +356,11 @@
         <instance x="1200" y="1568" name="XLXI_35" orien="R0" />
         <instance x="2368" y="2272" name="XLXI_12" orien="R0">
         </instance>
-        <instance x="2176" y="2448" name="XLXI_17" orien="R0" />
-        <branch name="XLXN_47">
-            <wire x2="2368" y1="2240" y2="2240" x1="2240" />
-            <wire x2="2240" y1="2240" y2="2320" x1="2240" />
-        </branch>
         <branch name="XLXN_48">
             <wire x2="2240" y1="1664" y2="2176" x1="2240" />
             <wire x2="2368" y1="2176" y2="2176" x1="2240" />
+            <wire x2="2240" y1="2176" y2="2240" x1="2240" />
+            <wire x2="2368" y1="2240" y2="2240" x1="2240" />
         </branch>
         <branch name="LED_COL(7:0)">
             <wire x2="3040" y1="1920" y2="1920" x1="3008" />
