@@ -192,11 +192,11 @@
         </branch>
         <instance x="1888" y="1504" name="XLXI_9" orien="R0" />
         <branch name="XLXN_119(31:0)">
-            <wire x2="2128" y1="1296" y2="1296" x1="2000" />
+            <wire x2="2128" y1="1296" y2="1296" x1="2016" />
             <wire x2="2128" y1="1296" y2="1408" x1="2128" />
             <wire x2="2144" y1="1408" y2="1408" x1="2128" />
         </branch>
-        <instance x="1856" y="1264" name="XLXI_11" orien="R0">
+        <instance x="1872" y="1264" name="XLXI_11" orien="R0">
         </instance>
     </sheet>
 </drawing>
