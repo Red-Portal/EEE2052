@@ -10,11 +10,6 @@
         <signal name="C" />
         <signal name="KEY_COL(3:0)" />
         <signal name="KEY_ROW(3:0)" />
-        <signal name="XLXN_62(7:0)" />
-        <signal name="XLXN_64" />
-        <signal name="XLXN_77" />
-        <signal name="XLXN_78" />
-        <signal name="XLXN_79" />
         <signal name="XLXN_80" />
         <signal name="XLXN_81" />
         <signal name="XLXN_82" />
@@ -26,8 +21,6 @@
         <signal name="XLXN_91" />
         <signal name="XLXN_92" />
         <signal name="XLXN_93" />
-        <signal name="XLXN_94" />
-        <signal name="XLXN_47" />
         <signal name="XLXN_48" />
         <signal name="LED_COL(7:0)" />
         <signal name="LED_ROW(7:0)" />
@@ -245,7 +238,7 @@
             <blockpin signalname="XLXN_107" name="A0" />
             <blockpin signalname="XLXN_108" name="A1" />
             <blockpin signalname="XLXN_109" name="A2" />
-            <blockpin name="E" />
+            <blockpin signalname="XLXN_112" name="E" />
             <blockpin signalname="ROW(0)" name="D0" />
             <blockpin signalname="ROW(1)" name="D1" />
             <blockpin signalname="ROW(2)" name="D2" />
@@ -409,7 +402,10 @@
         <instance x="304" y="1856" name="XLXI_47" orien="R0" />
         <branch name="XLXN_112">
             <wire x2="368" y1="1856" y2="2064" x1="368" />
-            <wire x2="432" y1="2064" y2="2064" x1="368" />
+            <wire x2="384" y1="2064" y2="2064" x1="368" />
+            <wire x2="432" y1="2064" y2="2064" x1="384" />
+            <wire x2="384" y1="2064" y2="2256" x1="384" />
+            <wire x2="1120" y1="2256" y2="2256" x1="384" />
         </branch>
         <branch name="ROW(0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1600" y="1808" type="branch" />
