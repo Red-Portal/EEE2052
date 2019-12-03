@@ -13,27 +13,6 @@
         <signal name="KEY_ROW_POW(2)" />
         <signal name="KEY_ROW_POW(1)" />
         <signal name="KEY_ROW_POW(0)" />
-        <signal name="XLXN_255" />
-        <signal name="XLXN_266" />
-        <signal name="XLXN_277" />
-        <signal name="XLXN_291">
-        </signal>
-        <signal name="XLXN_283" />
-        <signal name="XLXN_286" />
-        <signal name="XLXN_289(31:0)" />
-        <signal name="XLXN_291" />
-        <signal name="XLXN_300" />
-        <signal name="XLXN_308" />
-        <signal name="XLXN_310" />
-        <signal name="XLXN_318" />
-        <signal name="XLXN_320" />
-        <signal name="XLXN_331" />
-        <signal name="XLXN_340" />
-        <signal name="XLXN_361" />
-        <signal name="XLXN_363" />
-        <signal name="XLXN_376" />
-        <signal name="XLXN_377" />
-        <signal name="XLXN_378" />
         <signal name="KEY_COL(3:0)" />
         <signal name="UP" />
         <signal name="DOWN" />
@@ -42,20 +21,13 @@
         <signal name="SET" />
         <signal name="UNSET" />
         <signal name="ENTER" />
-        <signal name="XLXN_412" />
-        <signal name="XLXN_413" />
-        <signal name="XLXN_414" />
-        <signal name="XLXN_415" />
         <signal name="XLXN_343(31:0)" />
-        <signal name="XLXN_417" />
-        <signal name="XLXN_419" />
         <signal name="XLXN_4" />
         <signal name="XLXN_1" />
         <signal name="XLXN_2" />
         <signal name="XLXN_323" />
         <signal name="XLXN_321" />
         <signal name="CE" />
-        <signal name="XLXN_282" />
         <signal name="C" />
         <signal name="KEY_ROW_POW(3:0)" />
         <signal name="KEY_ROW_POW(3)" />
@@ -63,6 +35,8 @@
         <signal name="XLXN_442" />
         <signal name="XLXN_443" />
         <signal name="XLXN_444" />
+        <signal name="XLXN_446" />
+        <signal name="XLXN_447" />
         <port polarity="Input" name="KEY_COL(3:0)" />
         <port polarity="Output" name="UP" />
         <port polarity="Output" name="DOWN" />
@@ -72,7 +46,6 @@
         <port polarity="Output" name="UNSET" />
         <port polarity="Output" name="ENTER" />
         <port polarity="Input" name="CE" />
-        <port polarity="Input" name="XLXN_282" />
         <port polarity="Input" name="C" />
         <port polarity="Output" name="KEY_ROW_POW(3:0)" />
         <blockdef name="cb2re">
@@ -149,14 +122,6 @@
             <line x2="64" y1="-64" y2="-80" x1="64" />
             <line x2="64" y1="-128" y2="-96" x1="64" />
         </blockdef>
-        <blockdef name="ibuf">
-            <timestamp>2009-3-20T10:10:10</timestamp>
-            <line x2="64" y1="0" y2="-64" x1="64" />
-            <line x2="64" y1="-32" y2="0" x1="128" />
-            <line x2="128" y1="-64" y2="-32" x1="64" />
-            <line x2="128" y1="-32" y2="-32" x1="224" />
-            <line x2="64" y1="-32" y2="-32" x1="0" />
-        </blockdef>
         <block symbolname="pulldown" name="XLXI_49">
             <blockpin signalname="KEY_COL(0)" name="O" />
         </block>
@@ -230,36 +195,20 @@
             <blockpin signalname="C" name="C" />
             <blockpin signalname="CE" name="CE" />
             <blockpin signalname="XLXN_343(31:0)" name="PERIOD(31:0)" />
-            <blockpin signalname="XLXN_282" name="R" />
+            <blockpin signalname="XLXN_446" name="R" />
             <blockpin signalname="XLXN_321" name="T" />
-        </block>
-        <block symbolname="gnd" name="XLXI_129">
-            <blockpin signalname="XLXN_282" name="G" />
-        </block>
-        <block symbolname="ibuf" name="XLXI_167">
-            <blockpin signalname="XLXN_441" name="I" />
-            <blockpin signalname="KEY_ROW_POW(3)" name="O" />
         </block>
         <block symbolname="d2_4e" name="XLXI_3">
             <blockpin signalname="XLXN_1" name="A0" />
             <blockpin signalname="XLXN_2" name="A1" />
             <blockpin signalname="CE" name="E" />
-            <blockpin signalname="XLXN_441" name="D0" />
-            <blockpin signalname="XLXN_442" name="D1" />
-            <blockpin signalname="XLXN_443" name="D2" />
-            <blockpin signalname="XLXN_444" name="D3" />
+            <blockpin signalname="KEY_ROW_POW(0)" name="D0" />
+            <blockpin signalname="KEY_ROW_POW(1)" name="D1" />
+            <blockpin signalname="KEY_ROW_POW(2)" name="D2" />
+            <blockpin signalname="KEY_ROW_POW(3)" name="D3" />
         </block>
-        <block symbolname="ibuf" name="XLXI_169">
-            <blockpin signalname="XLXN_442" name="I" />
-            <blockpin signalname="KEY_ROW_POW(2)" name="O" />
-        </block>
-        <block symbolname="ibuf" name="XLXI_170">
-            <blockpin signalname="XLXN_443" name="I" />
-            <blockpin signalname="KEY_ROW_POW(1)" name="O" />
-        </block>
-        <block symbolname="ibuf" name="XLXI_171">
-            <blockpin signalname="XLXN_444" name="I" />
-            <blockpin signalname="KEY_ROW_POW(0)" name="O" />
+        <block symbolname="gnd" name="XLXI_175">
+            <blockpin signalname="XLXN_446" name="G" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -444,11 +393,6 @@
             <wire x2="1440" y1="720" y2="720" x1="1376" />
             <wire x2="1376" y1="720" y2="960" x1="1376" />
         </branch>
-        <branch name="XLXN_282">
-            <wire x2="608" y1="752" y2="752" x1="592" />
-            <wire x2="592" y1="752" y2="992" x1="592" />
-        </branch>
-        <instance x="528" y="1120" name="XLXI_129" orien="R0" />
         <bustap x2="2928" y1="528" y2="528" x1="3024" />
         <bustap x2="2928" y1="656" y2="656" x1="3024" />
         <bustap x2="2928" y1="592" y2="592" x1="3024" />
@@ -463,41 +407,53 @@
         </branch>
         <branch name="KEY_ROW_POW(0)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2816" y="720" type="branch" />
+            <wire x2="2400" y1="528" y2="528" x1="2352" />
+            <wire x2="2512" y1="528" y2="528" x1="2400" />
+            <wire x2="2512" y1="528" y2="720" x1="2512" />
+            <wire x2="2624" y1="720" y2="720" x1="2512" />
             <wire x2="2816" y1="720" y2="720" x1="2624" />
             <wire x2="2928" y1="720" y2="720" x1="2816" />
         </branch>
         <branch name="KEY_ROW_POW(1)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2816" y="656" type="branch" />
+            <wire x2="2400" y1="592" y2="592" x1="2352" />
+            <wire x2="2496" y1="592" y2="592" x1="2400" />
+            <wire x2="2496" y1="592" y2="656" x1="2496" />
+            <wire x2="2624" y1="656" y2="656" x1="2496" />
             <wire x2="2816" y1="656" y2="656" x1="2624" />
             <wire x2="2928" y1="656" y2="656" x1="2816" />
         </branch>
         <branch name="KEY_ROW_POW(2)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2816" y="592" type="branch" />
+            <wire x2="2400" y1="656" y2="656" x1="2352" />
+            <wire x2="2400" y1="608" y2="656" x1="2400" />
+            <wire x2="2528" y1="608" y2="608" x1="2400" />
+            <wire x2="2528" y1="592" y2="608" x1="2528" />
+            <wire x2="2624" y1="592" y2="592" x1="2528" />
             <wire x2="2816" y1="592" y2="592" x1="2624" />
             <wire x2="2928" y1="592" y2="592" x1="2816" />
         </branch>
         <branch name="KEY_ROW_POW(3)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2816" y="528" type="branch" />
+            <wire x2="2400" y1="720" y2="720" x1="2352" />
+            <wire x2="2480" y1="720" y2="720" x1="2400" />
+            <wire x2="2480" y1="544" y2="720" x1="2480" />
+            <wire x2="2624" y1="544" y2="544" x1="2480" />
             <wire x2="2816" y1="528" y2="528" x1="2624" />
             <wire x2="2928" y1="528" y2="528" x1="2816" />
+            <wire x2="2624" y1="528" y2="544" x1="2624" />
         </branch>
         <iomarker fontsize="28" x="3104" y="800" name="KEY_ROW_POW(3:0)" orien="R0" />
-        <instance x="2400" y="560" name="XLXI_167" orien="R0" />
-        <instance x="2400" y="624" name="XLXI_169" orien="R0" />
-        <instance x="2400" y="688" name="XLXI_170" orien="R0" />
-        <instance x="2400" y="752" name="XLXI_171" orien="R0" />
         <instance x="1968" y="848" name="XLXI_3" orien="R0" />
-        <branch name="XLXN_441">
-            <wire x2="2400" y1="528" y2="528" x1="2352" />
-        </branch>
-        <branch name="XLXN_442">
-            <wire x2="2400" y1="592" y2="592" x1="2352" />
-        </branch>
-        <branch name="XLXN_443">
-            <wire x2="2400" y1="656" y2="656" x1="2352" />
-        </branch>
-        <branch name="XLXN_444">
-            <wire x2="2400" y1="720" y2="720" x1="2352" />
+        <instance x="144" y="1184" name="XLXI_175" orien="R0" />
+        <branch name="XLXN_446">
+            <wire x2="272" y1="1040" y2="1040" x1="208" />
+            <wire x2="528" y1="1040" y2="1040" x1="272" />
+            <wire x2="208" y1="1040" y2="1056" x1="208" />
+            <wire x2="560" y1="1008" y2="1008" x1="528" />
+            <wire x2="528" y1="1008" y2="1040" x1="528" />
+            <wire x2="560" y1="752" y2="1008" x1="560" />
+            <wire x2="608" y1="752" y2="752" x1="560" />
         </branch>
     </sheet>
 </drawing>
