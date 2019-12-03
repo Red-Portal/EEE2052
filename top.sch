@@ -6,44 +6,37 @@
         <trait edittrait="all:0" />
     </attr>
     <netlist>
-        <signal name="XLXN_8" />
-        <signal name="XLXN_23" />
-        <signal name="XLXN_25" />
-        <signal name="XLXN_40(7:0)" />
-        <signal name="XLXN_42(7:0)" />
-        <signal name="XLXN_44(7:0)" />
-        <signal name="XLXN_46(7:0)" />
-        <signal name="XLXN_51" />
-        <signal name="XLXN_5" />
         <signal name="XLXN_6" />
         <signal name="C" />
         <signal name="XLXN_12" />
         <signal name="XLXN_13" />
         <signal name="XLXN_14" />
-        <signal name="COL(0)" />
-        <signal name="COL(1)" />
-        <signal name="COL(2)" />
-        <signal name="COL(3)" />
-        <signal name="COL(4)" />
-        <signal name="COL(5)" />
-        <signal name="COL(6)" />
-        <signal name="COL(7)" />
-        <signal name="COL(7:0)" />
+        <signal name="COL(0)">
+        </signal>
+        <signal name="COL(1)">
+        </signal>
+        <signal name="COL(2)">
+        </signal>
+        <signal name="COL(3)">
+        </signal>
+        <signal name="COL(4)">
+        </signal>
+        <signal name="COL(5)">
+        </signal>
+        <signal name="COL(6)">
+        </signal>
+        <signal name="COL(7)">
+        </signal>
+        <signal name="COL(7:0)">
+        </signal>
         <signal name="XLXN_45(7:0)" />
         <signal name="XLXN_47" />
         <signal name="XLXN_48" />
         <signal name="LED_COL(7:0)" />
         <signal name="LED_ROW(7:0)" />
+        <signal name="XLXN_54" />
+        <signal name="XLXN_55" />
         <port polarity="Input" name="C" />
-        <port polarity="Output" name="COL(0)" />
-        <port polarity="Output" name="COL(1)" />
-        <port polarity="Output" name="COL(2)" />
-        <port polarity="Output" name="COL(3)" />
-        <port polarity="Output" name="COL(4)" />
-        <port polarity="Output" name="COL(5)" />
-        <port polarity="Output" name="COL(6)" />
-        <port polarity="Output" name="COL(7)" />
-        <port polarity="Input" name="COL(7:0)" />
         <port polarity="Output" name="LED_COL(7:0)" />
         <port polarity="Output" name="LED_ROW(7:0)" />
         <blockdef name="cb4re">
@@ -139,13 +132,13 @@
         <block symbolname="cb4re" name="XLXI_5">
             <blockpin signalname="C" name="C" />
             <blockpin signalname="XLXN_6" name="CE" />
-            <blockpin signalname="XLXN_5" name="R" />
+            <blockpin signalname="XLXN_55" name="R" />
             <blockpin name="CEO" />
             <blockpin signalname="XLXN_12" name="Q0" />
             <blockpin signalname="XLXN_13" name="Q1" />
             <blockpin signalname="XLXN_14" name="Q2" />
-            <blockpin name="Q3" />
-            <blockpin signalname="XLXN_5" name="TC" />
+            <blockpin signalname="XLXN_54" name="Q3" />
+            <blockpin signalname="XLXN_55" name="TC" />
         </block>
         <block symbolname="vcc" name="XLXI_6">
             <blockpin signalname="XLXN_6" name="P" />
@@ -154,7 +147,7 @@
             <blockpin signalname="XLXN_12" name="A0" />
             <blockpin signalname="XLXN_13" name="A1" />
             <blockpin signalname="XLXN_14" name="A2" />
-            <blockpin name="A3" />
+            <blockpin signalname="XLXN_54" name="A3" />
             <blockpin signalname="XLXN_6" name="E" />
             <blockpin signalname="COL(0)" name="D0" />
             <blockpin signalname="COL(1)" name="D1" />
@@ -192,12 +185,6 @@
         <instance x="2384" y="1056" name="XLXI_12" orien="R0">
         </instance>
         <instance x="528" y="976" name="XLXI_5" orien="R0" />
-        <branch name="XLXN_5">
-            <wire x2="528" y1="944" y2="1024" x1="528" />
-            <wire x2="992" y1="1024" y2="1024" x1="528" />
-            <wire x2="992" y1="848" y2="848" x1="912" />
-            <wire x2="992" y1="848" y2="1024" x1="992" />
-        </branch>
         <branch name="XLXN_6">
             <wire x2="448" y1="608" y2="784" x1="448" />
             <wire x2="528" y1="784" y2="784" x1="448" />
@@ -219,30 +206,39 @@
             <wire x2="1232" y1="656" y2="656" x1="912" />
         </branch>
         <branch name="COL(0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1728" y="528" type="branch" />
             <wire x2="1728" y1="528" y2="528" x1="1616" />
         </branch>
         <branch name="COL(1)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1728" y="592" type="branch" />
             <wire x2="1728" y1="592" y2="592" x1="1616" />
         </branch>
         <branch name="COL(2)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1728" y="656" type="branch" />
             <wire x2="1728" y1="656" y2="656" x1="1616" />
         </branch>
         <branch name="COL(3)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1728" y="720" type="branch" />
             <wire x2="1728" y1="720" y2="720" x1="1616" />
         </branch>
         <branch name="COL(4)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1728" y="784" type="branch" />
             <wire x2="1728" y1="784" y2="784" x1="1616" />
         </branch>
         <branch name="COL(5)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1728" y="848" type="branch" />
             <wire x2="1728" y1="848" y2="848" x1="1616" />
         </branch>
         <branch name="COL(6)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1728" y="912" type="branch" />
             <wire x2="1728" y1="912" y2="912" x1="1616" />
         </branch>
         <branch name="COL(7)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1728" y="976" type="branch" />
             <wire x2="1728" y1="976" y2="976" x1="1616" />
         </branch>
         <branch name="COL(7:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2016" y="336" type="branch" />
             <wire x2="2192" y1="336" y2="336" x1="2016" />
             <wire x2="2192" y1="336" y2="704" x1="2192" />
             <wire x2="2384" y1="704" y2="704" x1="2192" />
@@ -276,16 +272,16 @@
             <wire x2="3056" y1="768" y2="768" x1="3024" />
         </branch>
         <iomarker fontsize="28" x="320" y="848" name="C" orien="R180" />
-        <iomarker fontsize="28" x="1728" y="528" name="COL(0)" orien="R0" />
-        <iomarker fontsize="28" x="1728" y="592" name="COL(1)" orien="R0" />
-        <iomarker fontsize="28" x="1728" y="656" name="COL(2)" orien="R0" />
-        <iomarker fontsize="28" x="1728" y="720" name="COL(3)" orien="R0" />
-        <iomarker fontsize="28" x="1728" y="784" name="COL(4)" orien="R0" />
-        <iomarker fontsize="28" x="1728" y="848" name="COL(5)" orien="R0" />
-        <iomarker fontsize="28" x="1728" y="912" name="COL(6)" orien="R0" />
-        <iomarker fontsize="28" x="1728" y="976" name="COL(7)" orien="R0" />
-        <iomarker fontsize="28" x="2016" y="336" name="COL(7:0)" orien="R180" />
         <iomarker fontsize="28" x="3056" y="704" name="LED_COL(7:0)" orien="R0" />
         <iomarker fontsize="28" x="3056" y="768" name="LED_ROW(7:0)" orien="R0" />
+        <branch name="XLXN_54">
+            <wire x2="1232" y1="720" y2="720" x1="912" />
+        </branch>
+        <branch name="XLXN_55">
+            <wire x2="528" y1="944" y2="992" x1="528" />
+            <wire x2="960" y1="992" y2="992" x1="528" />
+            <wire x2="960" y1="848" y2="848" x1="912" />
+            <wire x2="960" y1="848" y2="992" x1="960" />
+        </branch>
     </sheet>
 </drawing>
