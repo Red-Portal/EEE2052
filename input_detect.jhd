@@ -1,1 +1,3 @@
 MODULE input_detect
+	SUBMODULE pg32re
+		INSTANCE XLXI_108
