@@ -1,5 +1,4 @@
 
-# PlanAhead Generated physical constraints 
 
 NET "LED_COL[0]" LOC = P12;
 NET "LED_COL[1]" LOC = K1;
@@ -18,3 +17,14 @@ NET "LED_ROW[5]" LOC = M1;
 NET "LED_ROW[6]" LOC = J2;
 NET "LED_ROW[7]" LOC = L1;
 NET "C" LOC = N8;
+
+# PlanAhead Generated physical constraints 
+
+NET "KEY_COL[0]" LOC = B1;
+NET "KEY_COL[1]" LOC = A2;
+NET "KEY_COL[2]" LOC = B3;
+NET "KEY_COL[3]" LOC = A3;
+NET "KEY_ROW[0]" LOC = E1;
+NET "KEY_ROW[1]" LOC = D2;
+NET "KEY_ROW[2]" LOC = D1;
+NET "KEY_ROW[3]" LOC = C1;
