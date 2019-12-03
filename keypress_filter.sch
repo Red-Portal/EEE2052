@@ -14,7 +14,6 @@
         <signal name="XLXN_75" />
         <signal name="XLXN_76" />
         <signal name="XLXN_77" />
-        <signal name="XLXN_78" />
         <signal name="O" />
         <signal name="I" />
         <signal name="XLXN_79" />
@@ -97,32 +96,29 @@
             <blockpin signalname="XLXN_75" name="D" />
             <blockpin signalname="XLXN_77" name="Q" />
         </block>
-        <block symbolname="falling_edge_detector" name="XLXI_8">
-            <blockpin signalname="C" name="C" />
-            <blockpin signalname="CE" name="CE" />
-            <blockpin signalname="CLR" name="CLR" />
-            <blockpin signalname="XLXN_1" name="I" />
-            <blockpin signalname="O" name="O" />
-        </block>
-        <block symbolname="debouncer" name="XLXI_10">
-            <blockpin signalname="C" name="C" />
-            <blockpin signalname="CE" name="CE" />
-            <blockpin signalname="CLR" name="CLR" />
-            <blockpin signalname="XLXN_79" name="I" />
-            <blockpin signalname="XLXN_1" name="O" />
-        </block>
         <block symbolname="or4" name="XLXI_50">
             <blockpin signalname="XLXN_77" name="I0" />
             <blockpin signalname="XLXN_75" name="I1" />
             <blockpin signalname="XLXN_74" name="I2" />
             <blockpin signalname="XLXN_76" name="I3" />
-            <blockpin signalname="XLXN_79" name="O" />
+            <blockpin signalname="O" name="O" />
+        </block>
+        <block symbolname="debouncer" name="XLXI_10">
+            <blockpin name="C" />
+            <blockpin name="CE" />
+            <blockpin name="CLR" />
+            <blockpin name="I" />
+            <blockpin name="O" />
+        </block>
+        <block symbolname="falling_edge_detector" name="XLXI_8">
+            <blockpin name="C" />
+            <blockpin name="CE" />
+            <blockpin name="CLR" />
+            <blockpin name="I" />
+            <blockpin name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
-        <branch name="XLXN_1">
-            <wire x2="2384" y1="784" y2="784" x1="2160" />
-        </branch>
         <branch name="C">
             <wire x2="592" y1="592" y2="592" x1="400" />
             <wire x2="592" y1="592" y2="912" x1="592" />
@@ -209,6 +205,10 @@
             <wire x2="1776" y1="912" y2="912" x1="1760" />
         </branch>
         <branch name="O">
+            <wire x2="1776" y1="784" y2="784" x1="1616" />
+            <wire x2="2160" y1="784" y2="784" x1="1776" />
+            <wire x2="2384" y1="784" y2="784" x1="2160" />
+            <wire x2="2768" y1="784" y2="784" x1="2384" />
             <wire x2="2944" y1="784" y2="784" x1="2768" />
         </branch>
         <branch name="I">
@@ -221,12 +221,9 @@
         <text style="fontsize:64;fontname:Arial" x="1000" y="396">4 clock one shot to debouncer and falling edge detector</text>
         <iomarker fontsize="28" x="2944" y="784" name="O" orien="R0" />
         <instance x="1360" y="944" name="XLXI_50" orien="R0" />
-        <instance x="1776" y="1008" name="XLXI_10" orien="R0">
+        <instance x="1776" y="1488" name="XLXI_10" orien="R0">
         </instance>
-        <branch name="XLXN_79">
-            <wire x2="1776" y1="784" y2="784" x1="1616" />
-        </branch>
-        <instance x="2384" y="1008" name="XLXI_8" orien="R0">
+        <instance x="2432" y="1488" name="XLXI_8" orien="R0">
         </instance>
     </sheet>
 </drawing>
