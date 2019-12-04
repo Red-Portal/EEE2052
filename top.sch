@@ -7,8 +7,6 @@
     </attr>
     <netlist>
         <signal name="C" />
-        <signal name="LED_COL(7:0)" />
-        <signal name="LED_ROW(7:0)" />
         <signal name="XLXN_110" />
         <signal name="ROW(0)" />
         <signal name="XLXN_114(7:0)" />
@@ -22,7 +20,6 @@
         <signal name="ROW(5)" />
         <signal name="cursor_col(7:0)" />
         <signal name="cursor_row(7:0)" />
-        <signal name="ROW(7:0)" />
         <signal name="cursor_disp" />
         <signal name="mem_disp" />
         <signal name="KEY_ROW(3:0)" />
@@ -40,7 +37,6 @@
         <signal name="XLXN_139" />
         <signal name="edit_en" />
         <signal name="low" />
-        <signal name="XLXN_162" />
         <signal name="XLXN_205" />
         <signal name="XLXN_209(31:0)" />
         <signal name="init" />
@@ -49,12 +45,20 @@
         <signal name="CNT(2)" />
         <signal name="CNT(2:0)" />
         <signal name="o_set" />
-        <signal name="o_unset" />
+        <signal name="o_unset">
+        </signal>
+        <signal name="XLXN_228(7:0)" />
+        <signal name="LED_COL(7:0)" />
+        <signal name="LED_ROW(7:0)" />
+        <signal name="ROW(7:0)" />
+        <signal name="XLXN_238" />
+        <signal name="XLXN_240" />
+        <signal name="XLXN_242" />
         <port polarity="Input" name="C" />
-        <port polarity="Output" name="LED_COL(7:0)" />
-        <port polarity="Output" name="LED_ROW(7:0)" />
         <port polarity="Output" name="KEY_ROW(3:0)" />
         <port polarity="Input" name="KEY_COL(3:0)" />
+        <port polarity="Output" name="LED_COL(7:0)" />
+        <port polarity="Output" name="LED_ROW(7:0)" />
         <blockdef name="vcc">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-32" y2="-64" x1="64" />
@@ -217,16 +221,6 @@
             <line x2="0" y1="-352" y2="-352" x1="64" />
             <rect width="64" x="0" y="-364" height="24" />
         </blockdef>
-        <block symbolname="OutputUnit" name="XLXI_12">
-            <blockpin signalname="cursor_col(7:0)" name="ColCoord(7:0)" />
-            <blockpin signalname="XLXN_114(7:0)" name="ColData(7:0)" />
-            <blockpin signalname="cursor_disp" name="CursorEnable" />
-            <blockpin signalname="LED_COL(7:0)" name="DOT_COL(7:0)" />
-            <blockpin signalname="LED_ROW(7:0)" name="DOT_ROW(7:0)" />
-            <blockpin signalname="mem_disp" name="OE" />
-            <blockpin signalname="ROW(7:0)" name="RowAddress(7:0)" />
-            <blockpin signalname="cursor_row(7:0)" name="RowCoord(7:0)" />
-        </block>
         <block symbolname="d3_8e" name="XLXI_45">
             <blockpin signalname="CNT(0)" name="A0" />
             <blockpin signalname="CNT(1)" name="A1" />
@@ -294,7 +288,7 @@
             <blockpin signalname="XLXN_133" name="I_UNSET" />
             <blockpin signalname="XLXN_80" name="I_UP" />
             <blockpin signalname="XLXN_137" name="O_DOWN" />
-            <blockpin signalname="XLXN_162" name="O_ENTER" />
+            <blockpin signalname="XLXN_242" name="O_ENTER" />
             <blockpin signalname="XLXN_138" name="O_LEFT" />
             <blockpin signalname="XLXN_139" name="O_RIGHT" />
             <blockpin signalname="o_set" name="O_SET" />
@@ -321,7 +315,7 @@
             <blockpin signalname="high" name="CE" />
             <blockpin signalname="cursor_disp" name="CUR_DISP" />
             <blockpin signalname="edit_en" name="EDIT_EN" />
-            <blockpin signalname="XLXN_162" name="ENTER" />
+            <blockpin signalname="XLXN_242" name="ENTER" />
             <blockpin signalname="init" name="INIT" />
             <blockpin signalname="mem_disp" name="MEM_DISP" />
             <blockpin signalname="low" name="R" />
@@ -336,18 +330,18 @@
             <blockpin signalname="CNT(2:0)" name="ROW_COUNTER(2:0)" />
             <blockpin signalname="cursor_row(7:0)" name="ROW_CURSOR(7:0)" />
         </block>
+        <block symbolname="OutputUnit" name="XLXI_12">
+            <blockpin signalname="cursor_col(7:0)" name="ColCoord(7:0)" />
+            <blockpin signalname="XLXN_114(7:0)" name="ColData(7:0)" />
+            <blockpin signalname="cursor_disp" name="CursorEnable" />
+            <blockpin signalname="LED_COL(7:0)" name="DOT_COL(7:0)" />
+            <blockpin signalname="LED_ROW(7:0)" name="DOT_ROW(7:0)" />
+            <blockpin signalname="mem_disp" name="OE" />
+            <blockpin signalname="ROW(7:0)" name="RowAddress(7:0)" />
+            <blockpin signalname="cursor_row(7:0)" name="RowCoord(7:0)" />
+        </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
-        <instance x="2368" y="2272" name="XLXI_12" orien="R0">
-        </instance>
-        <branch name="LED_COL(7:0)">
-            <wire x2="3040" y1="1920" y2="1920" x1="3008" />
-        </branch>
-        <branch name="LED_ROW(7:0)">
-            <wire x2="3040" y1="1984" y2="1984" x1="3008" />
-        </branch>
-        <iomarker fontsize="28" x="3040" y="1920" name="LED_COL(7:0)" orien="R0" />
-        <iomarker fontsize="28" x="3040" y="1984" name="LED_ROW(7:0)" orien="R0" />
         <instance x="432" y="2256" name="XLXI_46" orien="R0" />
         <branch name="XLXN_110">
             <wire x2="432" y1="2224" y2="2224" x1="400" />
@@ -365,11 +359,8 @@
             <wire x2="1440" y1="1808" y2="1808" x1="1360" />
         </branch>
         <branch name="XLXN_114(7:0)">
-            <wire x2="2176" y1="1808" y2="1920" x1="2176" />
-            <wire x2="2368" y1="1920" y2="1920" x1="2176" />
-            <wire x2="2464" y1="1808" y2="1808" x1="2176" />
-            <wire x2="2464" y1="1440" y2="1440" x1="2384" />
-            <wire x2="2464" y1="1440" y2="1808" x1="2464" />
+            <wire x2="2400" y1="1440" y2="1440" x1="2384" />
+            <wire x2="2640" y1="1440" y2="1440" x1="2400" />
         </branch>
         <branch name="ROW(1)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1440" y="1872" type="branch" />
@@ -407,26 +398,6 @@
         <branch name="high">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="960" y="2256" type="branch" />
             <wire x2="976" y1="2256" y2="2256" x1="960" />
-        </branch>
-        <branch name="cursor_col(7:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2288" y="2048" type="branch" />
-            <wire x2="2368" y1="2048" y2="2048" x1="2288" />
-        </branch>
-        <branch name="cursor_row(7:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2288" y="2112" type="branch" />
-            <wire x2="2368" y1="2112" y2="2112" x1="2288" />
-        </branch>
-        <branch name="ROW(7:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2256" y="1984" type="branch" />
-            <wire x2="2368" y1="1984" y2="1984" x1="2256" />
-        </branch>
-        <branch name="mem_disp">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2288" y="2176" type="branch" />
-            <wire x2="2368" y1="2176" y2="2176" x1="2288" />
-        </branch>
-        <branch name="cursor_disp">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2288" y="2240" type="branch" />
-            <wire x2="2368" y1="2240" y2="2240" x1="2288" />
         </branch>
         <branch name="KEY_ROW(3:0)">
             <wire x2="1440" y1="336" y2="336" x1="1424" />
@@ -525,11 +496,6 @@
         <branch name="cursor_row(7:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2832" y="400" type="branch" />
             <wire x2="2832" y1="400" y2="400" x1="2720" />
-        </branch>
-        <branch name="XLXN_162">
-            <wire x2="2160" y1="784" y2="784" x1="2000" />
-            <wire x2="2160" y1="784" y2="960" x1="2160" />
-            <wire x2="2336" y1="960" y2="960" x1="2160" />
         </branch>
         <branch name="edit_en">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2784" y="1088" type="branch" />
@@ -636,13 +602,48 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1728" y="1504" type="branch" />
             <wire x2="1744" y1="1504" y2="1504" x1="1728" />
         </branch>
-        <branch name="o_set">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2016" y="656" type="branch" />
-            <wire x2="2016" y1="656" y2="656" x1="2000" />
-        </branch>
         <branch name="o_unset">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2016" y="720" type="branch" />
             <wire x2="2016" y1="720" y2="720" x1="2000" />
+        </branch>
+        <instance x="2640" y="1792" name="XLXI_12" orien="R0">
+        </instance>
+        <branch name="LED_COL(7:0)">
+            <wire x2="3312" y1="1440" y2="1440" x1="3280" />
+        </branch>
+        <branch name="LED_ROW(7:0)">
+            <wire x2="3312" y1="1504" y2="1504" x1="3280" />
+        </branch>
+        <branch name="cursor_col(7:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2560" y="1568" type="branch" />
+            <wire x2="2640" y1="1568" y2="1568" x1="2560" />
+        </branch>
+        <branch name="cursor_row(7:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2560" y="1632" type="branch" />
+            <wire x2="2640" y1="1632" y2="1632" x1="2560" />
+        </branch>
+        <branch name="ROW(7:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2528" y="1504" type="branch" />
+            <wire x2="2640" y1="1504" y2="1504" x1="2528" />
+        </branch>
+        <branch name="mem_disp">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2560" y="1696" type="branch" />
+            <wire x2="2640" y1="1696" y2="1696" x1="2560" />
+        </branch>
+        <branch name="cursor_disp">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2560" y="1760" type="branch" />
+            <wire x2="2640" y1="1760" y2="1760" x1="2560" />
+        </branch>
+        <iomarker fontsize="28" x="3312" y="1440" name="LED_COL(7:0)" orien="R0" />
+        <iomarker fontsize="28" x="3312" y="1504" name="LED_ROW(7:0)" orien="R0" />
+        <branch name="XLXN_242">
+            <wire x2="2160" y1="784" y2="784" x1="2000" />
+            <wire x2="2160" y1="784" y2="960" x1="2160" />
+            <wire x2="2336" y1="960" y2="960" x1="2160" />
+        </branch>
+        <branch name="o_set">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2016" y="656" type="branch" />
+            <wire x2="2016" y1="656" y2="656" x1="2000" />
         </branch>
     </sheet>
 </drawing>

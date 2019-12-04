@@ -17,13 +17,8 @@
         <signal name="XLXN_4(7:0)" />
         <signal name="DOT_COL(7:0)" />
         <signal name="XLXN_40" />
-        <signal name="XLXN_41" />
-        <signal name="XLXN_42(7:0)" />
-        <signal name="XLXN_43" />
-        <signal name="XLXN_44(7:0)" />
         <signal name="XLXN_45(7:0)" />
         <signal name="DOT_ROW(7:0)" />
-        <signal name="XLXN_47" />
         <port polarity="Input" name="ColData(7:0)" />
         <port polarity="Input" name="ColCoord(7:0)" />
         <port polarity="Input" name="CursorEnable" />
@@ -36,16 +31,6 @@
             <timestamp>2019-11-29T13:38:40</timestamp>
             <rect width="256" x="64" y="-128" height="128" />
             <line x2="0" y1="-96" y2="-96" x1="64" />
-            <line x2="0" y1="-32" y2="-32" x1="64" />
-            <rect width="64" x="0" y="-44" height="24" />
-            <line x2="384" y1="-96" y2="-96" x1="320" />
-            <rect width="64" x="320" y="-108" height="24" />
-        </blockdef>
-        <blockdef name="ORBUS8">
-            <timestamp>2019-11-28T6:19:52</timestamp>
-            <rect width="256" x="64" y="-128" height="128" />
-            <line x2="0" y1="-96" y2="-96" x1="64" />
-            <rect width="64" x="0" y="-108" height="24" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <rect width="64" x="0" y="-44" height="24" />
             <line x2="384" y1="-96" y2="-96" x1="320" />
@@ -81,15 +66,20 @@
             <line x2="64" y1="0" y2="-64" x1="64" />
             <line x2="160" y1="-32" y2="-32" x1="224" />
         </blockdef>
+        <blockdef name="XORBUS8">
+            <timestamp>2019-12-4T9:41:42</timestamp>
+            <rect width="256" x="64" y="-128" height="128" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <rect width="64" x="0" y="-108" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="384" y1="-96" y2="-96" x1="320" />
+            <rect width="64" x="320" y="-108" height="24" />
+        </blockdef>
         <block symbolname="BUFGCE_BUS8" name="XLXI_4">
             <blockpin signalname="XLXN_10" name="EN" />
             <blockpin signalname="ColCoord(7:0)" name="I(7:0)" />
             <blockpin signalname="XLXN_34(7:0)" name="O(7:0)" />
-        </block>
-        <block symbolname="ORBUS8" name="XLXI_8">
-            <blockpin signalname="XLXN_34(7:0)" name="A(7:0)" />
-            <blockpin signalname="ColData(7:0)" name="B(7:0)" />
-            <blockpin signalname="XLXN_4(7:0)" name="O(7:0)" />
         </block>
         <block symbolname="BUFGCE_BUS8" name="XLXI_2">
             <blockpin signalname="OE" name="EN" />
@@ -114,6 +104,11 @@
         <block symbolname="inv8" name="XLXI_17">
             <blockpin signalname="XLXN_45(7:0)" name="I(7:0)" />
             <blockpin signalname="DOT_ROW(7:0)" name="O(7:0)" />
+        </block>
+        <block symbolname="XORBUS8" name="XLXI_18">
+            <blockpin signalname="XLXN_34(7:0)" name="A(7:0)" />
+            <blockpin signalname="ColData(7:0)" name="B(7:0)" />
+            <blockpin signalname="XLXN_4(7:0)" name="O(7:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -160,8 +155,6 @@
         <iomarker fontsize="28" x="352" y="512" name="ColCoord(7:0)" orien="R180" />
         <iomarker fontsize="28" x="2368" y="704" name="OE" orien="R180" />
         <iomarker fontsize="28" x="2896" y="704" name="DOT_COL(7:0)" orien="R0" />
-        <instance x="1904" y="864" name="XLXI_8" orien="R0">
-        </instance>
         <instance x="1376" y="864" name="XLXI_4" orien="R0">
         </instance>
         <branch name="XLXN_10">
@@ -197,5 +190,7 @@
         </instance>
         <instance x="2864" y="960" name="XLXI_17" orien="R0" />
         <iomarker fontsize="28" x="3168" y="928" name="DOT_ROW(7:0)" orien="R0" />
+        <instance x="1904" y="864" name="XLXI_18" orien="R0">
+        </instance>
     </sheet>
 </drawing>
