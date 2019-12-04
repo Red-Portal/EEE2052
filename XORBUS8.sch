@@ -36,52 +36,53 @@
         <port polarity="Input" name="A(7:0)" />
         <port polarity="Input" name="B(7:0)" />
         <port polarity="Output" name="O(7:0)" />
-        <blockdef name="and2">
+        <blockdef name="or2">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-64" y2="-64" x1="0" />
             <line x2="64" y1="-128" y2="-128" x1="0" />
             <line x2="192" y1="-96" y2="-96" x1="256" />
-            <arc ex="144" ey="-144" sx="144" sy="-48" r="48" cx="144" cy="-96" />
-            <line x2="64" y1="-48" y2="-48" x1="144" />
-            <line x2="144" y1="-144" y2="-144" x1="64" />
-            <line x2="64" y1="-48" y2="-144" x1="64" />
+            <arc ex="192" ey="-96" sx="112" sy="-48" r="88" cx="116" cy="-136" />
+            <arc ex="48" ey="-144" sx="48" sy="-48" r="56" cx="16" cy="-96" />
+            <line x2="48" y1="-144" y2="-144" x1="112" />
+            <arc ex="112" ey="-144" sx="192" sy="-96" r="88" cx="116" cy="-56" />
+            <line x2="48" y1="-48" y2="-48" x1="112" />
         </blockdef>
-        <block symbolname="and2" name="XLXI_9">
+        <block symbolname="or2" name="XLXI_17">
             <blockpin signalname="B(7)" name="I0" />
             <blockpin signalname="A(7)" name="I1" />
             <blockpin signalname="O(7)" name="O" />
         </block>
-        <block symbolname="and2" name="XLXI_10">
+        <block symbolname="or2" name="XLXI_18">
             <blockpin signalname="B(6)" name="I0" />
             <blockpin signalname="A(6)" name="I1" />
             <blockpin signalname="O(6)" name="O" />
         </block>
-        <block symbolname="and2" name="XLXI_11">
+        <block symbolname="or2" name="XLXI_19">
             <blockpin signalname="B(5)" name="I0" />
             <blockpin signalname="A(5)" name="I1" />
             <blockpin signalname="O(5)" name="O" />
         </block>
-        <block symbolname="and2" name="XLXI_12">
+        <block symbolname="or2" name="XLXI_20">
             <blockpin signalname="B(4)" name="I0" />
             <blockpin signalname="A(4)" name="I1" />
             <blockpin signalname="O(4)" name="O" />
         </block>
-        <block symbolname="and2" name="XLXI_13">
+        <block symbolname="or2" name="XLXI_21">
             <blockpin signalname="B(3)" name="I0" />
             <blockpin signalname="A(3)" name="I1" />
             <blockpin signalname="O(3)" name="O" />
         </block>
-        <block symbolname="and2" name="XLXI_14">
+        <block symbolname="or2" name="XLXI_22">
             <blockpin signalname="B(2)" name="I0" />
             <blockpin signalname="A(2)" name="I1" />
             <blockpin signalname="O(2)" name="O" />
         </block>
-        <block symbolname="and2" name="XLXI_15">
+        <block symbolname="or2" name="XLXI_23">
             <blockpin signalname="B(1)" name="I0" />
             <blockpin signalname="A(1)" name="I1" />
             <blockpin signalname="O(1)" name="O" />
         </block>
-        <block symbolname="and2" name="XLXI_16">
+        <block symbolname="or2" name="XLXI_24">
             <blockpin signalname="B(0)" name="I0" />
             <blockpin signalname="A(0)" name="I1" />
             <blockpin signalname="O(0)" name="O" />
@@ -90,7 +91,8 @@
     <sheet sheetnum="1" width="3520" height="2720">
         <branch name="A(0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1072" y="160" type="branch" />
-            <wire x2="1120" y1="160" y2="160" x1="1072" />
+            <wire x2="1088" y1="160" y2="160" x1="1072" />
+            <wire x2="1120" y1="160" y2="160" x1="1088" />
         </branch>
         <branch name="B(0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1072" y="224" type="branch" />
@@ -196,13 +198,13 @@
         <iomarker fontsize="28" x="160" y="240" name="A(7:0)" orien="R270" />
         <iomarker fontsize="28" x="240" y="240" name="B(7:0)" orien="R270" />
         <iomarker fontsize="28" x="352" y="480" name="O(7:0)" orien="R90" />
-        <instance x="1120" y="1488" name="XLXI_9" orien="R0" />
-        <instance x="1120" y="1312" name="XLXI_10" orien="R0" />
-        <instance x="1120" y="1136" name="XLXI_11" orien="R0" />
-        <instance x="1120" y="960" name="XLXI_12" orien="R0" />
-        <instance x="1120" y="784" name="XLXI_13" orien="R0" />
-        <instance x="1120" y="608" name="XLXI_14" orien="R0" />
-        <instance x="1120" y="448" name="XLXI_15" orien="R0" />
-        <instance x="1120" y="288" name="XLXI_16" orien="R0" />
+        <instance x="1120" y="1488" name="XLXI_17" orien="R0" />
+        <instance x="1120" y="1312" name="XLXI_18" orien="R0" />
+        <instance x="1120" y="1136" name="XLXI_19" orien="R0" />
+        <instance x="1120" y="960" name="XLXI_20" orien="R0" />
+        <instance x="1120" y="784" name="XLXI_21" orien="R0" />
+        <instance x="1120" y="608" name="XLXI_22" orien="R0" />
+        <instance x="1120" y="448" name="XLXI_23" orien="R0" />
+        <instance x="1120" y="288" name="XLXI_24" orien="R0" />
     </sheet>
 </drawing>
